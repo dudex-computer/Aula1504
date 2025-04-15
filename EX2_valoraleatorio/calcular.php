@@ -1,13 +1,10 @@
 <?php
-<?php
-$n = ($_POST['num']) ? (int) $_POST['num'] : 0; // Garante que seja um número inteiro
-$num = rand(0, $n);
 
-echo "Um número entre 0 e $n foi sorteado. Ele é $num."; 
+$n1 = $_POST['n1'];
 
+$a = array(rand(0,$n1));
+$numero = $a[rand(0, count($a)-1)];
 
-    // $n = $_POST['num'];
-    // $no = array(0, count($n)-1);
-    // $num = $n[rand(0, count($n)-1)];
+echo "O numero sorteado foi: ".$numero;
 
-    // echo "Um número entre 0 e ".$n." foi sorteado. Ele é ".$num; 
+?>
